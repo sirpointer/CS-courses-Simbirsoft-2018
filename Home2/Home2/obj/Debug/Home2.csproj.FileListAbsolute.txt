@@ -1,0 +1,7 @@
+C:\Users\sirpo\source\repos\Home2\Home2\bin\Debug\Home2.exe.config
+C:\Users\sirpo\source\repos\Home2\Home2\bin\Debug\Home2.exe
+C:\Users\sirpo\source\repos\Home2\Home2\bin\Debug\Home2.pdb
+C:\Users\sirpo\source\repos\Home2\Home2\obj\Debug\Home2.csprojAssemblyReference.cache
+C:\Users\sirpo\source\repos\Home2\Home2\obj\Debug\Home2.csproj.CoreCompileInputs.cache
+C:\Users\sirpo\source\repos\Home2\Home2\obj\Debug\Home2.exe
+C:\Users\sirpo\source\repos\Home2\Home2\obj\Debug\Home2.pdb
