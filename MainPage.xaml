@@ -1,0 +1,62 @@
+﻿<Page
+    x:Class="Home3.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Home3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Name="GameGrid" Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="6*"/>
+            </Grid.RowDefinitions>
+
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <TextBox Name="PlayerOne" Text="Player1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <TextBox Name="PlayerTwo" Text="Player2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <ComboBox x:Name="CapacityCB" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ComboBoxItem IsSelected="True">3</ComboBoxItem>
+                    <ComboBoxItem>4</ComboBoxItem>
+                    <ComboBoxItem>5</ComboBoxItem>
+                    <ComboBoxItem>6</ComboBoxItem>
+                </ComboBox>
+
+                <Button Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Content="&#xE117;" FontFamily="Segoe MDL2 Assets" Click="Button_Click_1" />
+            </Grid>
+
+            <StackPanel Grid.Row="1" >
+                <TextBlock Name="StatusTextBlock" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                <TextBlock Name="WarningTextBlock" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            </StackPanel>
+
+            <Grid Name="FieldGrid" Grid.Row="2">
+
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Page>
