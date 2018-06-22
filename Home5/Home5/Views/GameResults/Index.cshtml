@@ -1,31 +1,31 @@
 ﻿@model IEnumerable<Home5.Models.GameResult>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Результаты игр";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Результаты игр</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Добавить запись", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Result)
+            Результат игры
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.FirstPlayer)
+            Первый игрок
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.SecondPlayer)
+            Второй игрок
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.StepsCount)
+            Количество ходов
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.GameTime)
+            Дата игры
         </th>
         <th></th>
     </tr>
@@ -48,9 +48,9 @@
             @Html.DisplayFor(modelItem => item.GameTime)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Редактировать", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Подробная информация", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.Id })
         </td>
     </tr>
 }
