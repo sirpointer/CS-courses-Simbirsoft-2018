@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище CrossZeroDBModelContainer" CdmEntityContainer="CrossZeroDBEntities">
+    <EntitySetMapping Name="GameResults">
+      <EntityTypeMapping TypeName="CrossZeroDBModel.GameResult">
+        <MappingFragment StoreEntitySet="GameResults">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="FirstPlayer" ColumnName="FirstPlayer" />
+          <ScalarProperty Name="SecondPlayer" ColumnName="SecondPlayer" />
+          <ScalarProperty Name="StepsCount" ColumnName="StepsCount" />
+          <ScalarProperty Name="GameTime" ColumnName="GameTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
